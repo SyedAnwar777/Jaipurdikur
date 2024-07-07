@@ -116,8 +116,8 @@ h6 {
 #header {
   background: #fff;
   transition: all 0.5s;
-  z-index: 997;
-  height: 70px;
+  z-index: 1200;
+  height: 100px;
 }
 
 #header.header-scrolled {
@@ -690,7 +690,9 @@ section {
 # Why Us
 --------------------------------------------------------------*/
 .why-us {
-  padding: 0;
+  padding: 50px;
+  background-color: rgb(253, 237, 249);
+  
 }
 
 .why-us .row {
@@ -699,10 +701,11 @@ section {
 
 .why-us .content-item {
   padding: 40px;
-  border-left: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+  border-left: 2px solid #eee;
+  border-bottom: 2px solid #eee;
   margin: -1px;
   text-align: center;
+  border-radius: 5px 5px;
 }
 
 .why-us .content-item span {
@@ -710,7 +713,7 @@ section {
   font-size: 24px;
   font-weight: 400;
   color: #DD8E8D;
-  text-align: center;
+  text-align: left;
 }
 
 .why-us .content-item h4 {
@@ -722,7 +725,7 @@ section {
 }
 
 .why-us .content-item p {
-  color: #aaaaaa;
+  color: #050505;
   font-size: 15px;
   margin: 0;
   padding: 0;
@@ -770,10 +773,11 @@ section {
 
 .services .icon-box {
   text-align: center;
-  padding: 70px 20px 80px 20px;
+  padding: 70px 20px 50px 20px;
   transition: all ease-in-out 0.3s;
   background: #fff;
-  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
+  box-shadow: 1px 2px 2px 0px #DD8E8D;
+  border-radius: 10px 10px 10px 10px;
 }
 
 .services .icon-box .icon {
@@ -822,7 +826,7 @@ section {
 }
 
 .services .icon-box:hover {
-  border-color: #fff;
+  border-color: #DD8E8D;
   box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
 }
 
@@ -896,6 +900,26 @@ section {
 
 .services .iconbox-teal:hover .icon path {
   fill: #11dbcf;
+}
+
+.services .btn-services{
+  font-family: "Book Antiqua";
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #DD8E8D;
+  color: #2f2f2f;
+  background-color: #fbfbfb;
+  border-radius: 4px;
+}
+
+.services .btn-services:hover{
+  background: #DD8E8D;
 }
 
 /*--------------------------------------------------------------
@@ -1421,10 +1445,11 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #090909;
+  padding: 60px;
+  background: #050505;
   color: #fff;
   font-size: 14px;
-  text-align: center;
+  text-align: left;
   padding: 30px 0;
 }
 
@@ -1439,8 +1464,8 @@ section {
 }
 
 #footer p {
-  font-size: 15;
-  font-style: italic;
+  font-size: 16px;
+  font-family: "Bookk Antiqua";
   padding: 0;
   margin: 0 0 40px 0;
 }
@@ -1449,10 +1474,21 @@ section {
   margin: 0 0 40px 0;
 }
 
+#footer ul li{
+padding: 10px;
+font-family: "Book Antiqua";
+font-size: 16px;
+color: #fff;
+}
+
+#footer ul li:hover{
+  color: #DD8E8D;
+}
+
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #DD8E8D;
+  background: #eeb2d1;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1465,18 +1501,50 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #449d5b;
+  background: #DD8E8D;
   color: #fff;
   text-decoration: none;
 }
 
 #footer .copyright {
   margin: 0 0 5px 0;
+  text-align: center;
 }
 
 #footer .credits {
   font-size: 13px;
 }
+
+.bii {
+  font-size: 18px;
+  display: inline-block;
+  background: #eeb2d1;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0px;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+.bii:hover{
+  background: #DD8E8D;
+}
+
+#footer a{
+  padding: 10px;
+font-family: "Book Antiqua";
+font-size: 18px;
+color: #fff;
+}
+
+.copyright{
+  font-size: 18px;
+}
+
 
 .testimonial-container {
   background-color: #ffffff;
