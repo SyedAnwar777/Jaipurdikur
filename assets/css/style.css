@@ -9,6 +9,8 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+
 body {
   font-family: "Book Antiqua";
   color: #050505;
@@ -123,7 +125,7 @@ h6 {
 }
 
 #header .logo {
-  font-size: 28px;
+  font-size: 20px;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -264,6 +266,10 @@ h6 {
   visibility: visible;
 }
 
+
+
+
+
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
@@ -290,7 +296,7 @@ h6 {
   color: #fff;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1000px) {
   .mobile-nav-toggle {
     display: block;
   }
@@ -648,7 +654,7 @@ section {
 
 .featured-services .description {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -658,6 +664,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 28px;
+  font-family: "Book Antiqua";
 }
 
 .about .content ul {
@@ -695,6 +702,7 @@ section {
   border-left: 1px solid #eee;
   border-bottom: 1px solid #eee;
   margin: -1px;
+  text-align: center;
 }
 
 .why-us .content-item span {
@@ -702,6 +710,7 @@ section {
   font-size: 24px;
   font-weight: 400;
   color: #DD8E8D;
+  text-align: center;
 }
 
 .why-us .content-item h4 {
@@ -709,6 +718,7 @@ section {
   font-weight: 300;
   padding: 0;
   margin: 20px 0;
+  text-align: center;
 }
 
 .why-us .content-item p {
@@ -716,6 +726,7 @@ section {
   font-size: 15px;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -728,24 +739,24 @@ section {
 # Our Clients
 --------------------------------------------------------------*/
 .clients .swiper-slide img {
-  opacity: 0.5;
+  opacity: 10;
   transition: 0.3s;
 }
 
 .clients .swiper-slide img:hover {
-  opacity: 1;
+  opacity: 10;
 }
 
 .clients .swiper-pagination {
-  margin-top: 20px;
+  margin-top: 24px;
   position: relative;
 }
 
 .clients .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
   background-color: #fff;
-  opacity: 1;
+  opacity: 10;
   border: 1px solid #DD8E8D;
 }
 
@@ -756,6 +767,7 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+
 .services .icon-box {
   text-align: center;
   padding: 70px 20px 80px 20px;
@@ -1135,6 +1147,7 @@ section {
   box-shadow: 0px 0px 12px 0px rgba(34, 34, 34, 0.07);
   padding: 30px 20px;
   background: #fff;
+  
 }
 
 .team .member img {
@@ -1466,12 +1479,18 @@ section {
 }
 
 
+.testimonial{
+  padding: 0;
+  display: inline-block;
+}
+
 .testimonial-container {
   background-color: #ffffff;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: 20px 0;
+  display: inline-block ;
 }
 .testimonial-title {
   margin-bottom: 20px;

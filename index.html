@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
 
   <title>Jaipur Dikur</title>
   <meta content="" name="description">
@@ -24,6 +24,31 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <style>
+    input[type=text] {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 100%;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+  </style>
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -43,7 +68,7 @@
   <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">jaipur.dikur20@gmail.com</a>
+        <i class="bi bi-envelope-fill"></i><a href="mailto:jaipur.dikur20@gmail.com">jaipur.dikur20@gmail.com</a>
         <i class="bi bi-phone-fill phone-icon"></i> +91 973-171-7701
         <i class="bi bi-phone-fill phone-icon"></i> +91 808-872-0073
       </div>
@@ -59,30 +84,26 @@
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center">
-      <div>
+     
+      <a href="index.html" class="logo me-auto"></a>
+        <h1 class="logo me-auto"><a href="index.html" style="color: black;"><img src="assets/img/logo1.jpg" alt="" class="img-fluid">Jaipur Dikur</a>
+        </h1>
+        
+      <div class="col-lg-8 align-items-center">
+       
         <nav id="navbar" class="navbar d-flex align-items-center">
           <ul>
-            <i class="bi bi-search"></i>
-           <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-            </svg>
-            <li><a class="nav-link scrollto active" href="#hero">Search</a></li>-->
+            <input type="text" name="search" placeholder="Search..">
+            <li><a class="nav-link scrollto" href="#index.html">Home</a></li>
             <li><a class="nav-link scrollto" href="#about">About Us</a></li>
-            </ul>
-        </nav>
-      </div>
-
-<!-- Uncomment below if you prefer to use an image logo -->
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <div class="container d-flex align-items-center"><a href="index.html" class="logo me-auto"></a>
-          <h1 class="logo me-auto"><a href="index.html" style="color: black;"><img src="assets/img/logo1.jpg" alt="" class="img-fluid">Jaipur Dikur</a></h1>
-       </div>
-       <div>
-        <nav id="navbar" class="navbar d-flex align-items-center">
-          <ul>
+            <li><a class="nav-link scrollto" href="#featured-services">Services</a></li>
             <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
-          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
-            </ul>
-        </nav>
+            
+            <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+          </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+            
+        </nav> 
       </div>
     </div>
   </header><!-- End Header -->
@@ -97,7 +118,7 @@
       <div class="carousel-inner" role="listbox">
 
         <!-- Slide 1 -->
-        <div class="carousel-item active" style="background-image: url(assets/img/slide/b3.jpg)">
+        <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-11.jpg)">
           <div class="carousel-container">
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">Make your Space Amazing</h2>
@@ -108,10 +129,10 @@
         </div>
 
         <!-- Slide 2 -->
-        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg)">
+        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-22.jpg)">
           <div class="carousel-container">
             <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Buy Antique Furniture</h2>
+              <h2 class="animate__animated animate__fadeInDown">Contemporary Home Accessories</h2>
               <p class="animate__animated animate__fadeInUp"></p>
               <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Explore Products</a>
             </div>
@@ -122,9 +143,9 @@
         <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg)">
           <div class="carousel-container">
             <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-              <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+              <h2 class="animate__animated animate__fadeInDown">Image Gallery</h2>
+              <p class="animate__animated animate__fadeInUp"></p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Explore </a>
             </div>
           </div>
         </div>
@@ -144,36 +165,36 @@
 
   <main id="main">
 
-    <!-- ======= Featured Services Section ======= -->
+    <!-- ======= Featured Services Section ======= 
     <section id="featured-services Center" class="featured-services section-bg">
       <div class="container">
 
         <div class="row no-gutters">
           <div class="col-lg-4 col-md-6">
             <div class="icon-box">
-              <div class="animate__animated animate__fadeInDown"><img src="assets/img/curate.jpeg" class="img-fluid" alt=""></div>
-            </br><h4 class="title"><a href="">Curate you Furniture</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            <!--<div class="animate__animated animate__fadeInDown"><img src="assets/img/curate.jpeg" class="img-fluid" alt=""></div>
+            </br><h4 class="title"><a href=""><h4>Project Management</h4></a></h4>
+              <p class="description">End-To-End Project Management</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="icon-box">
-              <div class="animate__animated animate__fadeInUp"><img src="assets/img/antique.jpeg" class="img-fluid" alt=""></div>
-              </br><h4 class="title"><a href="">Buy Antique Furniture</a></h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+              <!--<div class="animate__animated animate__fadeInDown"><img src="assets/img/curate.jpeg" class="img-fluid" alt=""></div>
+            </br><h4 class="title"><a href=""><h4>Sustainable Designs</h4></a></h4>
+              <p class="description">Embrace eco-friendly sustainable design</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="icon-box">
-              <div class="animate__animated animate__fadeInDown"><img src="assets/img/catalogue.jpeg" class="img-fluid" alt=""></div>
-            </br><h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur trade stravi</p>
+              <!--<div class="animate__animated animate__fadeInDown"><img src="assets/img/curate.jpeg" class="img-fluid" alt=""></div>
+            </br><h4 class="title"><a href=""><h4>Customisable Designs</h4></a></h4>
+              <p class="description">Your Vision, Our Design</p>
             </div>
           </div>
         </div>
 
       </div>
-    </section><!-- End Featured Services Section -->
+    </section> End Featured Services Section -->
 
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
@@ -181,107 +202,79 @@
 
         <div class="section-title">
           <h2>About Us</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
+         </div>
 
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-lg-6 order-1 order-lg-2">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+            <img src="assets/img/about1.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-            <p class="fst-italic">
+            <h3>“We offer top-tier, high-quality interior designs and solutions".</h3>
+           <!-- <p class="fst-italic">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
               magna aliqua.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+            </p>-->
+            </br>
+            <div class="row">
+            <ul class="col-lg-1"></ul>
+              <ul class="col-lg-8" style="text-align: justify">
+              <li><b>Quality and Style -</b> At Jaipur Dikur, we prioritize quality and style in our products.</li>
+              <li><b> Personalized Home Décor -</b> We enhance our customers’ home décor journey by offering personalized options.</li>
+              <li><b> Diverse Furnishing Offerings -</b> Choose from a variety of décor and furnishing options based on your preferences.</li>
+              <li><b> Nationwide Shipping -</b> We ship our products across the country</li>
+              
             </ul>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p>
+          </div>
+          <!--<p style="text-align: justify;">
+              At Jaipur Dikur we believe in quality, in style and in the beauty of our products. We make our customer’s home décor journey more personalised and filled with style. We provide a host of décor and furnishing offerings which you can choose to build as per your preferences. We are based in Bengaluru and we ship our products across the country.
+            </p>-->
           </div>
         </div>
 
       </div>
     </section><!-- End About Us Section -->
 
+
     <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us">
-      <div class="container">
-
-        <div class="row no-gutters">
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>01</span>
-            <h4>Lorem Ipsum</h4>
-            <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>02</span>
-            <h4>Repellat Nihil</h4>
-            <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>03</span>
-            <h4> Ad ad velit qui</h4>
-            <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>04</span>
-            <h4>Repellendus molestiae</h4>
-            <p>Inventore quo sint a sint rerum. Distinctio blanditiis deserunt quod soluta quod nam mider lando casa</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>05</span>
-            <h4>Sapiente Magnam</h4>
-            <p>Vitae dolorem in deleniti ipsum omnis tempore voluptatem. Qui possimus est repellendus est quibusdam</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>06</span>
-            <h4>Facilis Impedit</h4>
-            <p>Quis eum numquam veniam ea voluptatibus voluptas. Excepturi aut nostrum repudiandae voluptatibus corporis sequi</p>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Why Us Section -->
-
-    <!-- ======= Our Clients Section ======= -->
-    <section id="clients" class="clients">
+     
+    <section id="about" class="about">
       <div class="container">
 
         <div class="section-title">
-          <h2>Our Clients</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
+          <h2>Why Opt for Our Expertise? </h2>
+          <p style="color: black; font-size: 20px;">From conceptualization to completion, we are dedicated to creating spaces that inspire and delight.</p></br>
+           
+         </div>
 
-        <div class="clients-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+        <div class="row align-items-center">
+           
+          <div class="col-lg-6 order-2 order-lg-1">
+            <img src="assets/img/why.jpg" class="img-fluid" alt="">
           </div>
-          <div class="swiper-pagination"></div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-2 content">
+            <h4 style="color:#DD8E8D">Cutting-Edge Architecture</h4>
+            <p>
+              We seamlessly integrate state-of-the-art technologies and architectural methodologies, resulting in visually captivating spaces that are also structurally robust and efficient.
+</p></br>
+            <h4 style="color:#DD8E8D">Seasoned Professionals</h4>
+            <p>
+              Our experienced team brings years of industry expertise to each project. From initial concept to flawless execution, count on us to deliver exceptional results within your budget and timeline.
+</p></br>
+            <h4 style="color:#DD8E8D">Client-Centric Approach</h4>
+            <p>
+              Your satisfaction is our utmost priority. We take the time to understand your unique needs and preferences, tailoring our services accordingly.</p>            
+            
+            
+          <!--<p style="text-align: justify;">
+              At Jaipur Dikur we believe in quality, in style and in the beauty of our products. We make our customer’s home décor journey more personalised and filled with style. We provide a host of décor and furnishing offerings which you can choose to build as per your preferences. We are based in Bengaluru and we ship our products across the country.
+            </p>-->
+          </div>
         </div>
 
       </div>
-    </section><!-- End Our Clients Section -->
+    </section><!-- End Why us -->
+    
+   
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
@@ -289,44 +282,46 @@
 
         <div class="section-title">
           <h2>Services</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p style="color: black; font-size: 16px;">“Explore our comprehensive services, from efficient procurement to expert manufacturing and flawless installation. Whether it’s custom furniture or elegant lighting, we bring your vision to life with precision and care.”</p>
         </div>
 
         <div class="row">
+          
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="icon">
-                <img src="assets/img/Living.png" width="150" height="150" alt="">
+                <img src="assets/img/p1.png" width="150" height="130" alt="">
               </div>
-            </br><h4><a href="">Living / Dining Rooms</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </br><h4><a href="">Procurement</a></h4>
+              <p style="font-size: 16px;">Our procurement services ensure efficient sourcing and acquisition of furniture, lighting, and decor for your unique spaces.</p>
+              
             </div>
           </div>
-
+          
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box iconbox-blue">
               <div class="icon">
-                <img src="assets/img/Bedroom.png" width="150" height="150" alt="">
+                <img src="assets/img/p2.png" width="150" height="130" alt="">
               </div>
-            </br><h4><a href="">Bed Rooms</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </br><h4><a href="">Manufacturing</a></h4>
+              <p style="font-size: 16px;">Our manufacturing services bring custom furniture and decor designs to life, ensuring quality craftsmanship.</p>
+              
             </div>
+            
           </div>
-
+          
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box iconbox-pink">
               <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
-                </svg>
-                <i class="bx bx-tachometer"></i>
+                <img src="assets/img/p3.png" width="150" height="130" alt="">
               </div>
-              <h4><a href="">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </br>
+              <h4><a href="">Installation</a></h4>
+              <p style="font-size: 16px;">Our professional installation services bring your design vision to life, ensuring flawless placement of furniture, decor, and lighting.</p>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+         <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-yellow">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -363,14 +358,89 @@
               <h4><a href="">Divera Don</a></h4>
               <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
             </div>
-          </div>
+          </div>-->
 
         </div>
 
       </div>
     </section><!-- End Services Section -->
 
-    <!-- ======= Cta Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+        <div class="section-title">
+          <h3>Service Categories</h3>
+           </div>
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-4 col-md-6 content-item">
+            
+            
+            <h4>Commercial Projects</h4>
+            <p style="color: black;">We undertake large scale commercial projects providing end-to-end design solutions.</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 content-item">
+           
+            <h4>Interior Solutions</h4>
+            <p style="color: black;">We bring your vision to life with unique design touch, ensuring that every detail reflects your style and preferences.</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 content-item">
+            
+            <h4>Furnitures</h4>
+            <p style="color: black;">We offer furniture that can be moved and placed in spaces that perfectly compliments your style. </p>
+          </div>
+
+         <!-- <div class="col-lg-4 col-md-6 content-item">
+            <span>04</span>
+            <h4>Repellendus molestiae</h4>
+            <p>Inventore quo sint a sint rerum. Distinctio blanditiis deserunt quod soluta quod nam mider lando casa</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 content-item">
+            <span>05</span>
+            <h4>Sapiente Magnam</h4>
+            <p>Vitae dolorem in deleniti ipsum omnis tempore voluptatem. Qui possimus est repellendus est quibusdam</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 content-item">
+            <span>06</span>
+            <h4>Facilis Impedit</h4>
+            <p>Quis eum numquam veniam ea voluptatibus voluptas. Excepturi aut nostrum repudiandae voluptatibus corporis sequi</p>
+          </div>-->
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+     <!-- ======= Our Clients Section ======= -->
+     <section id="clients" class="clients">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Our Clients</h2>
+          </div>
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/prestige.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/moxye.jpg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/welcom.jpeg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/marriot.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/sahas.avif" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/artiste.jpeg" class="img-fluid" alt=""></div>
+            
+            </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Our Clients Section -->
+
+
+    <!-- ======= Cta Section ======= 
     <section id="cta" class="cta">
       <div class="container">
 
@@ -387,14 +457,13 @@
       </div>
     </section><!-- End Cta Section -->
 
-    <!-- ======= Portfolio Section ======= -->
+     <!--======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
       <div class="container">
 
         <div class="section-title">
           <h2>Portfolio</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
+          <p></div>
 
         <div class="row">
           <div class="col-lg-12 d-flex justify-content-center">
@@ -425,12 +494,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Web 3</h4>
                 <p>Web</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
                   <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -439,12 +508,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>App 2</h4>
                 <p>App</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
                   <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -453,12 +522,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Card 2</h4>
                 <p>Card</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
                   <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -467,12 +536,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Web 2</h4>
                 <p>Web</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
                   <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -481,66 +550,24 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>App 3</h4>
                 <p>App</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
                   <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
 
       </div>
     </section><!-- End Portfolio Section -->
+  
 
-    <!-- ======= Team Section ======= -->
+    <!-- ======= Team Section ======= 
     <section id="team" class="team section-bg">
       <div class="container">
 
@@ -604,20 +631,20 @@
         </div>
 
       </div>
-    </section><!-- End Team Section -->
+    </section> End Team Section -->
 
-    <section id="Team" class="team section-bg">
+    <section id="testimonial" class="testimonial">
     <div class="container ">
       <div class="section-title">
         <h2>Testimonial</h2></div>
 
       <div class="testimonial-container">
           <div class="star-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
+              <i class="fas fa-star"></i>&#9733
+              <i class="fas fa-star"></i>&#9733
+              <i class="fas fa-star"></i>&#9733
+              <i class="fas fa-star"></i>&#9733
+              <i class="fas fa-star-half-alt"></i>&#9734
           </div>
           <div class="testimonial-text">
               "This product is amazing! It has changed my life for the better. I highly recommend it to everyone."
@@ -629,11 +656,11 @@
 
       <div class="testimonial-container">
           <div class="star-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>&#9733
+              <i class="fas fa-star"></i>&#9733
+              <i class="fas fa-star"></i>&#9733
+              <i class="fas fa-star"></i>&#9733
+              <i class="fas fa-star"></i>&#9733
           </div>
           <div class="testimonial-text">
               "Excellent service and quality. I am very satisfied with my purchase. Five stars!"
@@ -645,11 +672,11 @@
 
       <div class="testimonial-container">
           <div class="star-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
+              <i class="fas fa-star"></i>&#9733
+              <i class="fas fa-star"></i>&#9733
+              <i class="fas fa-star"></i>&#9733
+              <i class="fas fa-star"></i>&#9733
+              <i class="far fa-star"></i>&#9733
           </div>
           <div class="testimonial-text">
               "Good value for money. Will definitely buy again. Highly recommended!"
@@ -667,7 +694,7 @@
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p></p>
         </div>
 
         <div class="row">
@@ -689,8 +716,8 @@
               <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>+91 973-171-7701</p>
-                <p>+91 808-872-0073</p>
+                <p>+91 973-171-7701</br>+91 808-872-0073</p>
+                
               </div>
 
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
