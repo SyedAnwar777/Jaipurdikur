@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -95,7 +96,7 @@ input[type=text]:focus {
        
         <nav id="navbar" class="navbar d-flex align-items-center">
           <ul>
-            <input type="text" name="search" placeholder="Search..">
+            <input type="search" name="search" placeholder="Search..">
             <li><a class="nav-link scrollto" href="#index.html">Home</a></li>
             <li><a class="nav-link scrollto" href="#about">About Us</a></li>
             <li><a class="nav-link scrollto" href="#featured-services">Services</a></li>
@@ -204,7 +205,7 @@ input[type=text]:focus {
 
         <div class="section-title">
           <h2>About Us</h2>
-          <p style="color: black; font-size: 20px;">We offer top-tier, high-quality interior designs and solutions.
+          <p style="color: black; font-size: 18px;">We offer top-tier, high-quality interior designs and solutions.
 
           </p></br>
            
@@ -244,7 +245,7 @@ input[type=text]:focus {
 
         <div class="section-title">
           <h2>Why Opt for Our Expertise? </h2>
-          <p style="color: black; font-size: 20px;">From conceptualization to completion, we are dedicated to creating spaces that inspire and delight.</p></br>
+          <p style="color: black; font-size: 18px;">From conceptualization to completion, we are dedicated to creating spaces that inspire and delight.</p></br>
            
          </div>
 
@@ -284,7 +285,7 @@ input[type=text]:focus {
 
         <div class="section-title">
           <h2>Services</h2>
-          <p style="color: black; font-size: 16px;">“Explore our comprehensive services, from efficient procurement to expert manufacturing and flawless installation. Whether it’s custom furniture or elegant lighting, we bring your vision to life with precision and care.”</p>
+          <p style="color: black; font-size: 18px;">“Explore our comprehensive services, from efficient procurement to expert manufacturing and flawless installation. Whether it’s custom furniture or elegant lighting, we bring your vision to life with precision and care.”</p>
         </div>
 
         <div class="row">
@@ -375,7 +376,7 @@ input[type=text]:focus {
       <div class="container">
         <div class="section-title">
           <h2>Our Process</h2>
-          <p style="color: black; font-size: 16px;">Catch a Glimpse of Our Workflow Post-Signup</p>
+          <p style="color: black; font-size: 18px;">Catch a Glimpse of Our Workflow Post-Signup</p>
         </div>
 
         <div class="row no-gutters">
@@ -707,7 +708,7 @@ input[type=text]:focus {
 
         <div class="row">
 
-          <div class="col-lg-5 d-flex align-items-stretch">
+          <div class="col-lg-6 d-flex align-items-stretch">
             <div class="info">
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
@@ -718,7 +719,7 @@ input[type=text]:focus {
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>jaipur.dikur20@gmail.com</p>
+                <p >jaipur.dikur20@gmail.com</p>
               </div>
 
               <div class="phone">
@@ -733,33 +734,29 @@ input[type=text]:focus {
 
           </div>
 
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6 mt-3 mt-md-0">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
+          <div class="col-lg-6 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="sendmail.php" method="POST">
+              <div class="contact-container">
+                  <h3 class="text-black py-3" >Get in touch with Us !</h3>
+                  <div class="underline mb-3"></div>
+                  <div class="form-group">
+                      <input type="name" name="fullname" placeholder="Full Name" class="form-control border-secondary" required>
+                  </div>
+                  <div class="form-group">
+                      <input type="email" name="email" placeholder="Email Address" class="form-control border-secondary" required>
+                  </div>
+                  <div class="form-group">
+                      <input type="tel" name="phone" maxlength="10" minlength="10" placeholder="Phone Number" class="form-control border-secondary" required>
+                  </div>
+                  <div class="form-group">
+                      <textarea name="message" placeholder="Type Your Message..." class="form-control border-secondary" rows="3" required></textarea>
+                  </div>
+                  <div class="form-group">
+                      <button type="submit" name="send_contactus" class="btn btn-lg btn-primary btn-block border-0">Send Message</button>
+                      
+                  </div>
               </div>
-              <div class="form-group mt-3">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
+          </form>
           </div>
 
         </div>
@@ -801,8 +798,8 @@ input[type=text]:focus {
   <h3>Contact Us</h3>
   <i class="bii bi-geo-alt-fill"></i><a>RT Nagar, Bangalore - 560032</a></br>
   <i class="bii bi-envelope-fill"></i><a href="mailto:jaipur.dikur20@gmail.com">jaipur.dikur20@gmail.com</a></br>
-  <i class="bii bi-phone-fill"></i> +91 973-171-7701</br>
-  <i class="bii bi-phone-fill"></i> +91 808-872-0073
+  <i class="bii bi-phone-fill"></i><a>+91 973-171-7701 </a> </br>
+  <i class="bii bi-phone-fill"></i> <a>+91 808-872-0073</a>
 </div> 
 
       
